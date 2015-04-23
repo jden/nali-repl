@@ -9,11 +9,16 @@ module.exports = function promiseEval(code, context, file, cb) {
   code = /await /.test(code) ? '(async function () { return ' + code + '})()'
                              : code
 
-  var compiled = babel.transform(code, {
-    optional: ['runtime'],
-    ast: false,
-    stage:1
-  })
+  try {
+    var compiled = babel.transform(code, {
+      optional: ['runtime'],
+      ast: false,
+      stage:1
+    })
+  } catch (e) {
+    console.error('parse error %j', code, e)
+    return cb(e)
+  }
 
   // un-strictify for easier variable definition
   compiled.code = compiled.code.substr('"use strict";'.length)
