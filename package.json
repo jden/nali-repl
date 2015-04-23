@@ -13,6 +13,9 @@
   "scripts": {
     "test": "node test/test"
   },
+  "bin": {
+    "nali": "./cli.js"
+  },
   "repository": "git@github.com:jden/nali-repl.git",
   "license": "ISC",
   "readmeFilename": "README.md",
@@ -22,6 +25,7 @@
   "dependencies": {
     "babel-core": "^5.1.11",
     "babel-runtime": "^5.1.11",
-    "fninfo": "^2.1.0"
+    "fninfo": "^2.1.0",
+    "polyfill-promise": "^3.0.0"
   }
 }
