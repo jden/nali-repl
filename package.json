@@ -1,0 +1,17 @@
+{
+  "name": "nali-repl",
+  "author": "jden <jason@denizac.org>",
+  "version": "1.0.0",
+  "description": "make an interactive repl from any nali container",
+  "keywords": ["repl", "nali", "dependency injection", "container"],
+  "main": "index.js",
+  "scripts": {
+    "test": "mochi"
+  },
+  "repository": "git@github.com:jden/nali-repl.git",
+  "license": "ISC",
+  "readmeFilename": "README.md",
+  "devDependencies": {
+    "mochi": "0.3.0"
+  }
+}
