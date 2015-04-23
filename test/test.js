@@ -1,9 +1,9 @@
-var mochi = require('mochi')
+const nali = require('nali')
+const repl = require('../index.js')
 
-describe('nali-repl', function () {
-  var naliRepl = require('../')
-  
-  it('', function () {
-
-  })
+const container = nali()
+repl(container, {
+  hi: function () {
+    return 'hi'
+  }
 })

@@ -2,13 +2,24 @@
 make an interactive repl from any nali container
 
 ## usage
+
 ```js
-var naliRepl = require('nali-repl')
+
+const nali = require('nali')
+const repl = require('nali-repl')
+
+const container = nali()
+repl(container, {
+  hi: function () {
+    return 'hi'
+  }
+})
+
 ```
 
 
 ## api
-
+`NaliRepl(container : NaliContainer, commands? : Dictionary<String,Function>) => Repl`
 
 ## installation
 
