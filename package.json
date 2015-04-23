@@ -17,10 +17,6 @@
   "license": "ISC",
   "readmeFilename": "README.md",
   "devDependencies": {
-    "mochi": "0.3.0",
     "nali": "^1.1.0"
-  },
-  "dependencies": {
-    "xtend": "^4.0.0"
   }
 }
