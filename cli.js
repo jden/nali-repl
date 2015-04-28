@@ -16,6 +16,10 @@ if (!(fs.existsSync(file) || fs.existsSync(file + '.js'))) {
   process.exit(2)
 }
 
+require('babel/register')({
+  ignore: /(request|lodash)/,
+  stage:1
+})
 const container = require(path.resolve(process.cwd(), file))
 
 function isContainer(x) {
