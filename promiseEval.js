@@ -1,5 +1,5 @@
 var vm = require('vm')
-var babel = require('babel-core')
+var babel = require('babel')
 var fninfo = require('fninfo')
 
 module.exports = function promiseEval(code, context, file, cb) {

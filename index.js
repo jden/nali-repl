@@ -1,6 +1,6 @@
 const repl = require('repl')
 const promiseEval = require('./promiseEval')
-const Promise = require('polyfill-promise').noConflict()
+const Promise = require('polyfill-promise')
 
 function preloadServices(container) {
   return Promise.all(container.services.map(function (s) {

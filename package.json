@@ -23,8 +23,9 @@
     "nali": "^1.1.0"
   },
   "dependencies": {
-    "babel-core": "^5.1.11",
-    "babel-runtime": "^5.1.11",
+    "babel": "^5.1.13",
+    "babel-core": "^5.1.13",
+    "babel-runtime": "^5.1.13",
     "fninfo": "^2.1.0",
     "polyfill-promise": "^3.0.0"
   }
